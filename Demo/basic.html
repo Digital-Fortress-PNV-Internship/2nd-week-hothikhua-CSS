@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC CSS</title>
+</head>
+<body>
+    <!--Display-->
+        <!--Block-level Elements-->
+        <h2>Block-level Elements</h2>
+        <span>A display property with a value of "block" results in</span> <span>a line break between the two elements.</span>
+        <p>Display links as block elements:</p>
+
+        <a href="/html/default.asp" target="_blank">HTML</a>
+        <a href="/css/default.asp" target="_blank">CSS</a>
+        <a href="/js/default.asp" target="_blank">JavaScript</a>
+        <!--Inline Elements-->
+        <h2>Inline Elements</h2>
+        <p>Display a list of links as a horizontal menu:</p>
+
+        <ul>
+        <li><a href="/html/default.asp" target="_blank">HTML</a></li>
+        <li><a href="/css/default.asp" target="_blank">CSS</a></li>
+        <li><a href="/js/default.asp" target="_blank">JavaScript</a></li>
+        </ul>
+        <!--Hidden-->
+        <h1>This is a visible heading</h1>
+        <h1 class="hidden">This is a hidden heading</h1>
+        <p>Notice that the h1 element with display: none; does not take up any space.</p>
+    <!--Position-->
+        <!--static-->
+        <h2>position: static;</h2>
+
+        <p>An element with position: static; is not positioned in any special way; it is 
+        always positioned according to the normal flow of the page:</p>
+
+        <div class="static">
+        This div element has position: static;
+        <!--relatives-->
+        <h2>position: relative;</h2>
+
+        <p>An element with position: relative; is positioned relative to its normal position:</p>
+        </div>
+        <div class="relative">
+        This div element has position: relative;
+        </div>
+        <!--fixed-->
+        <h2>position: fixed;</h2>
+
+        <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+        <div class="fixed">
+        This div element has position: fixed;
+        </div>
+        <!--absolute-->
+        <h2>position: absolute;</h2>
+
+        <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+        <div class="relative">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+        </div>
+        <!--sticky-->
+        <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+        <div class="sticky">I am sticky!</div>
+
+        <div style="padding-bottom:2000px">
+        <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+        <p>Scroll back up to remove the stickyness.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        </div>
+    <!--Box model-->
+    <h2>Demonstrating the Box Model</h2>
+
+    <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+    
+    <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <!--Combinators-->
+        <!--Descendant Selector-->
+        <h2>Descendant Selector</h2>
+        <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+        <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section><p>Paragraph 3 in the div.</p></section>
+        </div>
+
+        <p>Paragraph 4. Not in a div.</p>
+        <p>Paragraph 5. Not in a div.</p>
+        <!--Child Selector (>)-->
+        <h2>Child Selector</h2>
+        <p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+        <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section><p>Paragraph 3 in the div.</p></section> <!-- not Child but Descendant -->
+        <p>Paragraph 4 in the div.</p>
+        </div>
+
+        <p>Paragraph 5. Not in a div.</p>
+        <p>Paragraph 6. Not in a div.</p>
+        <!--Adjacent Sibling Selector (+)-->
+        <h2>Adjacent Sibling Selector</h2>
+
+        <p>The + selector is used to select an element that is directly after another specific element.</p>
+        <p>The following example selects the first p element that are placed immediately after div elements:</p>
+
+        <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        </div>
+
+        <p>Paragraph 3. After a div.</p>
+        <p>Paragraph 4. After a div.</p>
+
+        <div>
+        <p>Paragraph 5 in the div.</p>
+        <p>Paragraph 6 in the div.</p>
+        </div>
+
+        <p>Paragraph 7. After a div.</p>
+        <p>Paragraph 8. After a div.</p>
+        <!--General Sibling Selector (~)-->
+        <h2>General Sibling Selector</h2>
+        <p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+
+        <p>Paragraph 1.</p>
+
+        <div>
+        <p>Paragraph 2.</p>
+        </div>
+
+        <p>Paragraph 3.</p>
+        <code>Some code.</code>
+        <p>Paragraph 4.</p>
+    <!--Pseudo-classes-->
+    <h2>CSS Links</h2>
+    <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+    <!--Pseudo-elements-->
+    <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+// LESS
+.block { margin: 10px 5px; }
+p {
+	&:extend(.block);
+	border: 1px solid #eee;
+}
+ul, ol {
+	&:extend(.block);
+	text-transform: uppercase;
+}
+
+// // SASS
+// .block { margin: 10px 5px; }
+// p {
+// 	@extend .block;
+// 	border: 1px solid #eee;
+// }
+// ul, ol {
+// 	@extend .block;
+// 	text-transform: uppercase;
+// }

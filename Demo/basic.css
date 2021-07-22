@@ -1,0 +1,114 @@
+/*Display */
+    /*Block-level Elements*/
+    span {
+        display: block;
+      }
+    
+    a {
+        display: block;
+      }
+    /*Inline Elements*/
+    li {
+        display: inline;
+      }
+    /*Hidden*/
+    h1.hidden {
+        display: none;
+      }
+/*Position*/
+      /*static*/
+      div.static {
+        position: static;
+        border: 3px solid #73AD21;
+      }
+      /*relative*/
+      div.relative {
+        position: relative;
+        left: 30px;
+        border: 3px solid #73AD21;
+      }
+      /*fixed*/
+      div.fixed {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        border: 3px solid #73AD21;
+      }
+      /*absolute*/
+      div.relative {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73AD21;
+      } 
+      
+      div.absolute {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+      }
+      /*sticky*/
+      div.sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 5px;
+        background-color: #cae8ca;
+        border: 2px solid #4CAF50;
+      }
+/*Box model*/
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+/*Combinators*/
+  /*Descendant Selector*/
+  div p {
+    background-color: yellow;
+  }
+  /*Child Selector (>)*/
+  div > p {
+    background-color: yellow;
+  }
+  /*Adjacent Sibling Selector (+)*/
+  div + p {
+    background-color: yellow;
+  }
+  /*General Sibling Selector (~)*/
+  div ~ p {
+    background-color: yellow;
+  }
+/*Pseudo-classes*/
+    /* unvisited link */
+    a:link {
+        color: red;
+    }
+    
+    /* visited link */
+    a:visited {
+        color: green;
+    }
+    
+    /* mouse over link */
+    a:hover {
+        color: hotpink;
+    }
+    
+    /* selected link */
+    a:active {
+        color: blue;
+    }
+/*Pseudo-elements*/
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+  }
+/*Backgrounds*/
+
